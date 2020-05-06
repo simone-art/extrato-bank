@@ -1,0 +1,23 @@
+﻿<div class="jumbotron">
+    <h1>EXTRATO IBANK </h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>ContaCliente</th>
+            <th>SaldoConta</th>
+            <th>Descricao</th>
+        </tr>
+
+        @foreach (ExtratoBank.Models.ExtratoBankCliente extrato in ViewBag.ExtratoBankClientes){
+        <tr>
+            <td>@extrato.Id</td>
+            <td>@extrato.ContaCliente</td>
+            <td>@extrato.SaldoConta</td>
+            <td>@extrato.Descricao</td>
+        </tr>
+        
+        }
+
+    </table>
+</div>
+
